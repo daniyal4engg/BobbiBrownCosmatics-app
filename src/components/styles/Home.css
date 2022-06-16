@@ -1,0 +1,31 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  border: 5px solid #ffff00;
+  display: flex;
+  justify-content: center;
+}
+.parent {
+  height: 200px;
+  background: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child {
+  background-color: #ffff00;
+  width: 100px;
+  height: 100px;
+}
+.cover {
+  object-fit: contain;
+}
+
+.Trendfont {
+  font-family: bbsans "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

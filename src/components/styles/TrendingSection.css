@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.objectFit {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
