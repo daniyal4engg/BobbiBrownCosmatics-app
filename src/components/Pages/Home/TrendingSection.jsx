@@ -63,8 +63,6 @@ export const TrendingSection = () => {
                 </div> */}
 
                 <div className="container my-5">
-                  <hr className="my-5" />
-
                   <div
                     id="multi-item-example"
                     className="carousel slide carousel-multi-item"
@@ -110,19 +108,16 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E9GP01_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  No Smudge Mascara
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Volumizes & lengthens without smudging
                                 </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
                               </div>
                             </div>
                           </div>
@@ -131,19 +126,16 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_EGXR17_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  Natural (N-052 / 4)
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  16-hour, breathable, natural matte coverage
                                 </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
                               </div>
                             </div>
                           </div>
@@ -152,19 +144,16 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E1LM01_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  Vitamin Enriched Face Base
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Multitasking, moisturizing primer
                                 </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
                               </div>
                             </div>
                           </div>
@@ -177,15 +166,15 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E1LM01_600x600_0.jpg"
                                 alt="Card cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  Vitamin Enriched Face Base
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Multitasking, moisturizing primer
                                 </p>
                                 <a href="google" className="btn btn-primary">
                                   Button
@@ -358,19 +347,14 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                src="https://m.bobbibrowncosmetics.com/media/export/cms/products/v2_1080x1080/bb_sku_EPTA03_1080x1080_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">Free Sprit</h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Crushed Oil-Infused Gloss
                                 </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
                               </div>
                             </div>
                           </div>
@@ -379,19 +363,12 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ETCY12_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
-                                <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
-                                </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
+                                <h4 className="card-title">Bare Claret</h4>
+                                <p className="card-text">Extra Lip Tint</p>
                               </div>
                             </div>
                           </div>
@@ -400,19 +377,14 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E96E51_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">Moonstone New</h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Our ultimate quick eye shadow stick
                                 </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
                               </div>
                             </div>
                           </div>
@@ -425,15 +397,15 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E1LM01_600x600_0.jpg"
                                 alt="Card cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  Vitamin Enriched Face Base
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Multitasking, moisturizing primer
                                 </p>
                                 <a href="google" className="btn btn-primary">
                                   Button
@@ -446,15 +418,13 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_E0KK01_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">Espresso Ink</h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Long-Wear Gel Eyeliner
                                 </p>
                                 <a href="google" className="btn btn-primary">
                                   Button
@@ -467,15 +437,15 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_EGXR17_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  Natural (N-052 / 4)
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Skin Long-Wear Weightless Foundation SPF 15
                                 </p>
                                 <a href="google" className="btn btn-primary">
                                   Button
@@ -607,19 +577,16 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ET7E01_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  Deluxe Size Soothing Cleansing Oil
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Deluxe Size Soothing Cleansing Oil
                                 </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
                               </div>
                             </div>
                           </div>
@@ -628,19 +595,16 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_EKLT01_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  Primer Plus Protection SPF 50
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Protective face primer
                                 </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
                               </div>
                             </div>
                           </div>
@@ -649,19 +613,16 @@ export const TrendingSection = () => {
                             <div className="card mb-2">
                               <img
                                 className="card-img-top"
-                                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                src="https://www.bobbibrowncosmetics.com/media/export/cms/products/600x600/bb_sku_ERAN01_600x600_0.jpg"
                                 alt="Card  cap"
                               />
                               <div className="card-body">
-                                <h4 className="card-title">Card title</h4>
+                                <h4 className="card-title">
+                                  Extra Cleansing Balm
+                                </h4>
                                 <p className="card-text">
-                                  Some quick example text to build on the card
-                                  title and make up the bulk of the card's
-                                  content.
+                                  Purifying, conditioning cleanser
                                 </p>
-                                <a href="google" className="btn btn-primary">
-                                  Button
-                                </a>
                               </div>
                             </div>
                           </div>

@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Center, Text } from "@chakra-ui/react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
@@ -126,7 +126,7 @@ export const SignIn = () => {
                 <Button
                   mt="20px"
                   height="40px"
-                  width="400px"
+                  width="300px"
                   borderColor="#ccd0d5"
                   color="white"
                   borderRadius={"50px"}
@@ -150,16 +150,21 @@ export const SignIn = () => {
                 >
                   Login
                 </Button>
-                <Box display={"flex"} pt="30px">
-                  <Box>
-                    <Text>Create your Account</Text>
+                <Center>
+                  <Box pt="30px">
+                    <Box>
+                      <Text>Create new your Account</Text>
+                    </Box>
+                    <Box pt={"15px"} pl="10px">
+                      <NavLink
+                        to="/signup"
+                        style={{ textDecoration: "none", fontWeight: "bold" }}
+                      >
+                        Signup
+                      </NavLink>
+                    </Box>
                   </Box>
-                  <Box pt={"15px"} pl="10px">
-                    <NavLink to="/signup" style={{ textDecoration: "none" }}>
-                      Signup
-                    </NavLink>
-                  </Box>
-                </Box>
+                </Center>
               </FormControl>
             </Flex>
           </Box>

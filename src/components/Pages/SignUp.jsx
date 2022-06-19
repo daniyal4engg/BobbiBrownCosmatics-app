@@ -157,7 +157,7 @@ export const SignUp = () => {
                 <Button
                   mt="20px"
                   height="40px"
-                  width="400px"
+                  width="300px"
                   borderColor="#ccd0d5"
                   color="white"
                   borderRadius={"50px"}
@@ -183,7 +183,10 @@ export const SignUp = () => {
                   Submit
                 </Button>
                 <Text>Already have an account ?</Text>
-                <NavLink to="/signin" style={{ textDecoration: "none" }}>
+                <NavLink
+                  to="/signin"
+                  style={{ textDecoration: "none", fontWeight: "bold" }}
+                >
                   Login
                 </NavLink>
               </FormControl>
