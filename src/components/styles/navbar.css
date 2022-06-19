@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: "10px";
+  margin: auto;
+}
+
+.verticalLine {
+  border-left: 1px solid black;
+  height: 100%;
+}
+
+.familyfontdiff {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.selectWidth {
+  width: 300px;
+}
+.bordercustom {
+  border: 1px solid black;
+}
+
+wordLimit {
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #000000;
+}

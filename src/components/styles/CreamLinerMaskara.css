@@ -11,3 +11,24 @@
 .bold {
   font-weight: bold;
 }
+
+.flexCenter {
+  flex-direction: column;
+  margin: auto;
+}
+/* .flexCenterChild {
+  width: 100%;
+  display: block;
+
+  background-color: brown;
+} */
+.shopFontFamily {
+  color: red;
+}
+.forumfamily {
+  font-family: "Gotham", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+.underline {
+  text-decoration: underline;
+}

@@ -2,11 +2,16 @@ import "../../styles/Home.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import { Center, Wrap, WrapItem } from "@chakra-ui/react";
+import { Box, Heading, Stack } from "@chakra-ui/react";
 
 export const HomeHead = () => {
   return (
-    <Container>
+    <Container className="familyfontdiff">
+      <Stack>
+        <Box fontSize="90px" style={{ fontWeight: "bold" }}>
+          BOBBI BROWN
+        </Box>
+      </Stack>
       <Row
         style={{
           height: "415.59px",
@@ -20,12 +25,13 @@ export const HomeHead = () => {
             height: "415.59px",
             width: "50%",
           }}
+          className="flexCenter"
         >
-          <p>SUMMER STOCK-UP EVENT</p>
-          <h1 style={{ fontsize: "60px" }}>25% OFF</h1>
-          <h1>EVERYTRHING</h1>
-          <p> Get more of what you love for less. Plus, create a</p>
-          <p> 3-piece Summer Travel Set when you spend $75+.</p>
+          <Box>SUMMER STOCK-UP EVENT</Box>
+          <Heading fontSize>25% OFF</Heading>
+          <Heading>EVERYTRHING</Heading>
+          <Box> Get more of what you love for less. Plus, create a</Box>
+          <Box> 3-piece Summer Travel Set when you spend $75+.</Box>
           <button>click</button>
         </Col>
         <Col style={{ height: "100%", width: "50%" }}>

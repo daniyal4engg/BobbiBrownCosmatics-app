@@ -13,9 +13,11 @@ export const CleanLookposter = () => {
                 alt=""
               />
             </Box>
-            <Box w="50%">
-              <Text> LIVE FROM L.A., IT’S NIKKI</Text>
-              <Heading> MINIMALIST</Heading>
+            <Box w="50%" className="flexCenter">
+              <Text className="flexCenterChild">
+                LIVE FROM L.A., IT’S NIKKI
+              </Text>
+              <Heading className="flexCenterChild"> MINIMALIST</Heading>
               <Heading> CLEAN LOOK</Heading>
               <Text>
                 Watch how Artist in Residence Nikki DeRoest creates a Minimalist

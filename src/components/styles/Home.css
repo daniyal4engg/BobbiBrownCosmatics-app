@@ -29,3 +29,8 @@
   font-family: bbsans "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+.flexCenter {
+  flex-direction: column;
+  margin: auto;
+}
