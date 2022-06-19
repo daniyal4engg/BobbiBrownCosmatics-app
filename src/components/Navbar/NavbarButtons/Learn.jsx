@@ -17,8 +17,15 @@ export const Learn = () => {
           <Offcanvas.Title>Learn</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          Always-On Artistry
+          <p>OUR ARTISTS</p>
+          <br />
+          <p> VIRTUAL SERVICES</p>
+          <br />
+          <p>HOW TO VIDEOS</p>
+          <p>Our Brand</p>
+          <p>Join BB Access and earn points</p>
+          <p>Find a store</p>
         </Offcanvas.Body>
       </Offcanvas>
     </>
