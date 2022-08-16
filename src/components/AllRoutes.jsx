@@ -1,7 +1,7 @@
 import { Home } from "./Pages/Home";
 import { Routes, Route } from "react-router-dom";
-import { SignUp } from "./Pages/SignUp";
-import { SignIn } from "./Pages/SignIn";
+import { Signup } from "./Pages/SignUp";
+import { Login } from "./Pages/SignIn";
 import { NavbarSection } from "./Navbar/Navbar";
 import { Pencil } from "./Navbar/NavbarButtons/ShopComponentsCategory/Pencil";
 import { Cream } from "./Navbar/NavbarButtons/ShopComponentsCategory/Cream";
@@ -13,14 +13,17 @@ import { PaletteSinglePage } from "./Navbar/NavbarButtons/ShopComponentsCategory
 import { PencilSinglePage } from "./Navbar/NavbarButtons/ShopComponentsCategory/pencilSinglePage";
 import { AllProducts } from "./Navbar/NavbarButtons/ShopComponentsCategory/AllProducts";
 import { AllProductsSinglePage } from "./Navbar/NavbarButtons/ShopComponentsCategory/AllProductsSinglePage";
+import { Cart } from "./Pages/Cart";
+
+import { ProtectedRoute } from "./Pages/Context/ProtecteRoute";
 export const AllRoutes = () => {
   return (
     <div>
       <NavbarSection />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/signup" element={<SignUp />}></Route>
-        <Route path="/signin" element={<SignIn />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
 
         <Route path="/allproducts" element={<AllProducts />}></Route>
         <Route
@@ -47,6 +50,16 @@ export const AllRoutes = () => {
           path="/pencilSinglePage/:id"
           element={<PencilSinglePage />}
         ></Route>
+        <Route
+          path="/cart"
+          element={
+            <ProtectedRoute>
+              <Cart />
+            </ProtectedRoute>
+          }
+        >
+          Cart
+        </Route>
       </Routes>
     </div>
   );

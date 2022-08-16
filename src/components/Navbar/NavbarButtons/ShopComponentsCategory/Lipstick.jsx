@@ -13,7 +13,7 @@ export const Lipstick = () => {
   //  http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick
   const creamData = () => {
     axios({
-      url: "http://localhost:8000/lipsticks",
+      url: "http://localhost:8080/lipsticks",
       method: "get",
       params: {
         // _sort: "category",

@@ -1,13 +1,12 @@
 // import { Input } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { Box } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 import Form from "react-bootstrap/Form";
 export const Search = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  // const [searchTerm, setSearchTerm] = useState("");
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);

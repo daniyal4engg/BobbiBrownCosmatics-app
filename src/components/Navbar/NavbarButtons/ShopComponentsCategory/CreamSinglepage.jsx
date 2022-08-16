@@ -14,7 +14,7 @@ export const CreamSinglepage = () => {
   const creamSingleData = async () => {
     try {
       const { id } = params;
-      const res = await fetch(`http://localhost:8000/creams/${id}`);
+      const res = await fetch(`http://localhost:8080/creams/${id}`);
       const data = await res.json();
       setData(data);
     } catch (err) {

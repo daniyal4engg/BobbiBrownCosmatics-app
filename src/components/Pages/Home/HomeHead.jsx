@@ -34,12 +34,11 @@ export const HomeHead = () => {
           <Box> 3-piece Summer Travel Set when you spend $75+.</Box>
           <button>click</button>
         </Col>
-        <Col style={{ height: "100%", width: "50%" }}>
+        <Col style={{ height: "100%", width: "100%" }}>
           <img
-            src="https://media.istockphoto.com/photos/fashion-and-makeup-accessories-with-copy-space-on-white-picture-id639006000?k=20&m=639006000&s=170667a&w=0&h=25-j8c8_Y609l2CnxQKj_L_M0sqskBshn05Di-HG00E="
+            src="https://media.istockphoto.com/photos/fashion-accessories-and-smart-phone-with-blank-screen-top-view-picture-id639005694?k=20&m=639005694&s=170667a&w=0&h=OE9Dbb5kv60v6GNIaLFdjwdkzgi6-JW5wt9tY-Tc49s="
             alt="poster"
-            width="100%"
-            height="500px"
+            className="imgScale"
           />
         </Col>
       </Row>

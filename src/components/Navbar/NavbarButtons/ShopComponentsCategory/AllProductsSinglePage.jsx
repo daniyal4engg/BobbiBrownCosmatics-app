@@ -14,7 +14,7 @@ export const AllProductsSinglePage = () => {
   const creamSingleData = async () => {
     try {
       const { id } = params;
-      const res = await fetch(`http://localhost:8000/consmatics/${id}`);
+      const res = await fetch(`http://localhost:8080/consmatics/${id}`);
       const data = await res.json();
       setData(data);
     } catch (err) {

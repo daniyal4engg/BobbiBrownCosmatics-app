@@ -7,7 +7,7 @@ export const CleanLookposter = () => {
       <Center>
         <Wrap>
           <WrapItem>
-            <Box w="500px" height="500px">
+            <Box w="500px">
               <img
                 src="https://www.bobbibrowncosmetics.com/media/export/cms/HP_Modules/SS22/SS22_Minimalist_Clean_Look_pc.jpg"
                 alt=""

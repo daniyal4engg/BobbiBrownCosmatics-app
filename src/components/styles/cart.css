@@ -1,0 +1,79 @@
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+  flex-wrap: wrap;
+  height: 220px;
+}
+.img {
+  width: 200px;
+  height: 200px;
+}
+.flex > div {
+  width: 15%;
+}
+
+.removBtn {
+  background-color: rgb(189, 15, 15);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+.removBtn:hover {
+  background-color: rgb(143, 53, 53);
+  color: white;
+}
+.btnDec,
+.btnInc {
+  padding: 10px;
+  color: white;
+  background-color: #484a4d;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btnDec:hover,
+.btnInc:hover {
+  padding: 10px;
+  color: white;
+  background-color: #5d6268;
+
+  margin-right: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.plusMinus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.totalAmount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding-top: 20px;
+  gap: 50px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.totalAmount > button {
+  background-color: rgb(23, 68, 141);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.totalAmount > button:hover {
+  background-color: rgb(125, 122, 122);
+  color: white;
+}
+.totalAmount > h2 > span {
+  font-weight: bold;
+  color: rgb(88, 146, 220);
+  font-size: 40px;
+}

@@ -13,7 +13,7 @@ export const Palette = () => {
   // https://makeup-api.herokuapp.com/api/v1/products.json?product_category=palette&product_type=eyeshadow
   const creamData = () => {
     axios({
-      url: "http://localhost:8000/palettes",
+      url: "http://localhost:8080/palettes",
       method: "get",
       params: {
         // _sort: "category",
@@ -43,9 +43,10 @@ export const Palette = () => {
                   />{" "}
                   <br />
                 </Center>
-                <Text className="font-weight-normal wordLimit" mt={2}>
+                <Text className="font-weight-normal " mt={2}>
                   {e.name}
                 </Text>
+
                 <Text mt={2}>${e.price}</Text>
 
                 <Text mt={2}>{e.category}</Text>

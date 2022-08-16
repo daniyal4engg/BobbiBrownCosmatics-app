@@ -34,3 +34,11 @@
   flex-direction: column;
   margin: auto;
 }
+.familyfontdiff {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.imgScale {
+  width: 100rem;
+  height: 100%;
+  object-fit: fill;
+}

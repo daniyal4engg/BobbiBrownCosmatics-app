@@ -13,7 +13,7 @@ export const Pencil = () => {
   // https://makeup-api.herokuapp.com/api/v1/products.json?product_category=pencil&product_type=eyeshadow
   const creamData = () => {
     axios({
-      url: "http://localhost:8000/pencils",
+      url: "http://localhost:8080/pencils",
       method: "get",
       params: {
         // _sort: "category",

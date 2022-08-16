@@ -1,10 +1,22 @@
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: "10px";
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-rows: repeat(3, 400px); */
   margin: auto;
+  gap: 50px 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
+img {
+  /* width: 60%; */
+  width: 250px;
+  height: 250px;
+}
+.block {
+  width: 20%;
+  /* height: 500px; */
+}
 .verticalLine {
   border-left: 1px solid black;
   height: 100%;
@@ -20,10 +32,49 @@
   border: 1px solid black;
 }
 
-wordLimit {
+.wordLimit {
   white-space: nowrap;
   width: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
   border: 1px solid #000000;
+}
+/* navar  */
+.cartParent {
+  /* position: relative; */
+}
+.cartChild {
+  /* position: absolute;
+  top: 5px;
+  font-weight: bold;
+  z-index: 10000;
+  font-size: large;
+  color: rgb(211, 102, 39); */
+}
+
+.font-weight-normal {
+  position: relative;
+  font-size: 14px;
+  color: black;
+  font-family: sans-serif;
+  width: 250px; /* Could be anything you like. */
+}
+.goToHome {
+  color: white;
+}
+.goToHome:hover {
+  color: rgb(122, 141, 155);
+}
+/* .cardData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.whiteText {
+  color: white;
+}
+.flexTurn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

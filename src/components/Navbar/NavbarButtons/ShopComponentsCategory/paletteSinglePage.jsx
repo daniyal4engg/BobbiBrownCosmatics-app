@@ -13,7 +13,7 @@ export const PaletteSinglePage = () => {
   const creamSingleData = async () => {
     try {
       const { id } = params;
-      const res = await fetch(`http://localhost:8000/palettes/${id}`);
+      const res = await fetch(`http://localhost:8080/palettes/${id}`);
       const data = await res.json();
       setData(data);
     } catch (err) {
@@ -29,12 +29,16 @@ export const PaletteSinglePage = () => {
         textAlign="start"
         border="4px solid grey"
         padding="15px"
+        width="900px"
       >
         <Center>
           <img src={data.image_link} alt="" /> <br />
         </Center>
         <Text className="font-weight-normal" mt={2}>
           {data.name}
+        </Text>
+        <Text className="font-weight-normal " mt={2}>
+          {data.description}
         </Text>
         <Text mt={2}>${data.price}</Text>
 

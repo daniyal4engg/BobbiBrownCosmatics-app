@@ -7,6 +7,7 @@ import {
 } from "../Pages/Home/CreamLinerMaskara";
 import { FounderCreators } from "../Pages/Home/FounderCreators";
 import { CleanLookposter } from "../Pages/Home/CleanLookposter";
+import Footer from "./Home/Footer";
 export const Home = () => {
   return (
     <h1>
@@ -17,6 +18,7 @@ export const Home = () => {
       <CleanLookposter />
       <SummerLineUp />
       <LearnFromPros />
+      <Footer />
     </h1>
   );
 };

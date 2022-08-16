@@ -13,7 +13,7 @@ export const PencilSinglePage = () => {
   const creamSingleData = async () => {
     try {
       const { id } = params;
-      const res = await fetch(`http://localhost:8000/pencils/${id}`);
+      const res = await fetch(`http://localhost:8080/pencils/${id}`);
       const data = await res.json();
       setData(data);
     } catch (err) {
