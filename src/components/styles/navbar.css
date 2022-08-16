@@ -40,17 +40,6 @@ img {
   border: 1px solid #000000;
 }
 /* navar  */
-.cartParent {
-  /* position: relative; */
-}
-.cartChild {
-  /* position: absolute;
-  top: 5px;
-  font-weight: bold;
-  z-index: 10000;
-  font-size: large;
-  color: rgb(211, 102, 39); */
-}
 
 .font-weight-normal {
   position: relative;

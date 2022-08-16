@@ -51,12 +51,12 @@ export const AllProducts = () => {
   };
   // console.log("dilterrrr", filterCategory);
   // page logic
-  let ItemShiftLimit = (data.length - 1) * 4;
-  if (page >= ItemShiftLimit) {
-    setPage(ItemShiftLimit - 1);
-  }
+  // let ItemShiftLimit = (data.length - 1) * 4;
+  // if (page >= ItemShiftLimit) {
+  //   setPage(ItemShiftLimit - 1);
+  // }
   // console.log("data", page);
-  // console.log("add", (15 + 15) * 2);
+  console.log("page", page);
   return (
     <Box>
       <Wrap>
@@ -117,8 +117,8 @@ export const AllProducts = () => {
           return (
             <Box
               key={e.id}
-              className="wholeBlock"
-              marginLeft="20px"
+              // className="wholeBlock"
+              marginLeft="40px"
               textAlign="start"
             >
               {/* <Link to={`/AllProductsSinglePage/${e.id}`}> */}
