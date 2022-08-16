@@ -25,7 +25,14 @@ export const AllRoutes = () => {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
 
-        <Route path="/allproducts" element={<AllProducts />}></Route>
+        <Route
+          path="/allproducts"
+          element={
+            <ProtectedRoute>
+              <AllProducts />
+            </ProtectedRoute>
+          }
+        ></Route>
         <Route
           path="/AllProductsSinglePage/:id"
           element={<AllProductsSinglePage />}
