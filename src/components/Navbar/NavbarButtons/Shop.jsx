@@ -14,27 +14,26 @@ export const Shop = () => {
       <Button className="btn-dark" onClick={handleShow}>
         Shop
       </Button>
-
       <Offcanvas className="forumfamily " show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Shop</Offcanvas.Title>
+          <Offcanvas.Title style={{ fontSize: "30px" }}>Shop</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body style={{ letterSpacing: "-2px" }}>
           <p className="h4 underline">Sort by</p>
           <VStack>
-            <Link className="h1" to="/allproducts">
+            <Link className="h2" to="/allproducts">
               All Products
             </Link>
-            <Link className="h1" to="/cream">
+            <Link className="h2" to="/cream">
               Cream
             </Link>
-            <Link className="h1" to="/lipstick">
+            <Link className="h2" to="/lipstick">
               Lipstick
             </Link>
-            <Link className="h1" to="/pencil">
+            <Link className="h2" to="/pencil">
               Pencil
             </Link>
-            <Link className="h1" to="/palette">
+            <Link className="h2" to="/palette">
               Palette
             </Link>
           </VStack>
