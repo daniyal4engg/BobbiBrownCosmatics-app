@@ -25,7 +25,11 @@ export const Search = () => {
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Search Product</Form.Label>
-              <Form.Control type="text" placeholder="Product Name" />
+              <Form.Control
+                type="text"
+                placeholder="Product Name"
+                // onchage={handleChange}
+              />
             </Form.Group>
           </Form>
         </Offcanvas.Body>
