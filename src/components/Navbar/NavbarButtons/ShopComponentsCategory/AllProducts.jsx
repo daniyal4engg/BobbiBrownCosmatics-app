@@ -50,13 +50,7 @@ export const AllProducts = () => {
     setFilterCategory(e.target.value);
   };
   // console.log("dilterrrr", filterCategory);
-  // page logic
-  // let ItemShiftLimit = (data.length - 1) * 4;
-  // if (page >= ItemShiftLimit) {
-  //   setPage(ItemShiftLimit - 1);
-  // }
-  // console.log("data", page);
-  console.log("page", page);
+
   return (
     <Box>
       <Wrap>
@@ -115,35 +109,52 @@ export const AllProducts = () => {
       <Box className="grid familyfontdiff">
         {data.map((e) => {
           return (
-            <Box
-              key={e.id}
-              // className="wholeBlock"
-              marginLeft="40px"
-              textAlign="start"
-            >
-              {/* <Link to={`/AllProductsSinglePage/${e.id}`}> */}
-              <Center>
-                <img src={e.image_link} alt="" /> <br />
-              </Center>
-              <Text className="font-weight-normal" mt={2}>
-                {e.name}
-              </Text>
-              <Text mt={2}>${e.price}</Text>
-
-              <Text mt={2}> {e.category ? e.category : "Empty"} </Text>
-              <Button
-                onClick={() => addItem(e)}
-                mb={2}
-                mt={2}
-                bg="black"
-                color="white"
+            <Center>
+              <Box
+                key={e.id}
+                // className="wholeBlock"
+                // marginLeft="40px"
+                textAlign="start"
+                padding="10px"
               >
-                Add to Cart
-              </Button>
-              <br />
-              {/* <hr /> */}
-              {/* </Link> */}
-            </Box>
+                {/* <Link to={`/AllProductsSinglePage/${e.id}`}> */}
+
+                <Center>
+                  <img src={e.image_link} alt="" /> <br />
+                </Center>
+                <Text className="font-weight-normal" mt={2}>
+                  {e.name}
+                </Text>
+                <Text mt={2}>${e.price}</Text>
+
+                <Text mt={2}> {e.category ? e.category : "Empty"} </Text>
+                <Link to={`/AllProductsSinglePage/${e.id}`}>
+                  <Button
+                    mb={2}
+                    mt={2}
+                    mr={4}
+                    // w="119.11px"
+                    bg="black"
+                    color="white"
+                  >
+                    View Product
+                  </Button>
+                </Link>
+                <Button
+                  onClick={() => addItem(e)}
+                  mb={2}
+                  mt={2}
+                  bg="black"
+                  color="white"
+                  w="133px"
+                >
+                  Add to Cart
+                </Button>
+                <br />
+                {/* <hr /> */}
+                {/* </Link> */}
+              </Box>
+            </Center>
           );
         })}
       </Box>

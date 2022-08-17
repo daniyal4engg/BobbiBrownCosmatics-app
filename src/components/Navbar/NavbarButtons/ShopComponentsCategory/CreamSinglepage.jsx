@@ -14,15 +14,17 @@ export const CreamSinglepage = () => {
   const creamSingleData = async () => {
     try {
       const { id } = params;
-      const res = await fetch(`http://localhost:8080/creams/${id}`);
+      const res = await fetch(
+        `https://bobbibrowncosmeticjson.herokuapp.com/creams/${id}`
+      );
       const data = await res.json();
       setData(data);
     } catch (err) {
       console.log("error", err);
     }
   };
-  console.log("cremSingle", data);
-  console.log("creamSinglePAge", data);
+  // console.log("cremSingle", data);
+  // console.log("creamSinglePAge", data);
   return (
     <Center mt="10px">
       <Box

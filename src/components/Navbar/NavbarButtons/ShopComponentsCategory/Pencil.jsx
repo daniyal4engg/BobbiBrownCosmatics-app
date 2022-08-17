@@ -13,7 +13,7 @@ export const Pencil = () => {
   // https://makeup-api.herokuapp.com/api/v1/products.json?product_category=pencil&product_type=eyeshadow
   const creamData = () => {
     axios({
-      url: "http://localhost:8080/pencils",
+      url: "https://bobbibrowncosmeticjson.herokuapp.com/pencils",
       method: "get",
       params: {
         // _sort: "category",
@@ -25,7 +25,7 @@ export const Pencil = () => {
       .then((r) => setData(r.data))
       .catch((e) => e.data);
   };
-  console.log("pencil", data);
+  // console.log("pencil", data);
   return (
     <Box>
       <Heading>Pencil</Heading>
@@ -33,22 +33,24 @@ export const Pencil = () => {
         {data.map((e) => {
           return (
             <Box key={e.id} marginLeft="20px" textAlign="start">
+              <Center>
+                <img src={e.api_featured_image} alt="" width="200px" /> <br />
+              </Center>
+              <Text className="font-weight-normal" mt={2}>
+                {e.name}
+              </Text>
+              <Text mt={2}>${e.price}</Text>
+              <Text mt={2}>{e.category}</Text>
               <Link to={`/pencilSinglePage/${e.id}`}>
-                <Center>
-                  <img src={e.api_featured_image} alt="" width="200px" /> <br />
-                </Center>
-                <Text className="font-weight-normal" mt={2}>
-                  {e.name}
-                </Text>
-                <Text mt={2}>${e.price}</Text>
-
-                <Text mt={2}>{e.category}</Text>
-                <Button mb={2} mt={2} bg="black" color="white">
-                  Add to Bag
+                <Button mb={2} mt={2} mr={4} bg="black" color="white">
+                  View Product
                 </Button>
-                <br />
-                <hr />
               </Link>
+              <Button mb={2} mt={2} bg="black" color="white">
+                Add to Bag
+              </Button>
+              <br />
+              <hr />
             </Box>
           );
         })}

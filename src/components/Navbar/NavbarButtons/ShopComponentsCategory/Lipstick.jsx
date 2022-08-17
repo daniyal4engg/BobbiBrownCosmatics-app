@@ -13,7 +13,7 @@ export const Lipstick = () => {
   //  http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product_type=lipstick
   const creamData = () => {
     axios({
-      url: "http://localhost:8080/lipsticks",
+      url: "https://bobbibrowncosmeticjson.herokuapp.com/lipsticks",
       method: "get",
       params: {
         // _sort: "category",
@@ -25,30 +25,33 @@ export const Lipstick = () => {
       .then((r) => setData(r.data))
       .catch((e) => e.data);
   };
-  console.log("lipstick", data);
+  // console.log("lipstick", data);
   return (
     <Box>
       <Heading>Lipstick</Heading>
       <Box className="grid familyfontdiff">
         {data.map((e) => {
           return (
-            <Box key={e.id} marginLeft="20px" textAlign="start">
-              <Link to={`/LipstickSinglePage/${e.id}`}>
-                <Center>
-                  <img src={e.image_link} alt="" /> <br />
-                </Center>
-                <Text className="font-weight-normal" mt={2}>
-                  {e.name}
-                </Text>
-                <Text mt={2}>${e.price}</Text>
+            <Box key={e.id} padding="10px" textAlign="start">
+              <Center>
+                <img src={e.image_link} alt="" /> <br />
+              </Center>
+              <Text className="font-weight-normal" mt={2}>
+                {e.name}
+              </Text>
+              <Text mt={2}>${e.price}</Text>
 
-                <Text mt={2}>{e.category}</Text>
-                <Button mb={2} mt={2} bg="black" color="white">
-                  Add to Bag
+              <Text mt={2}>{e.category}</Text>
+              <Link to={`/LipstickSinglePage/${e.id}`}>
+                <Button mb={2} mt={2} mr={4} bg="black" color="white">
+                  View Product
                 </Button>
-                <br />
-                <hr />
               </Link>
+              <Button mb={2} mt={2} bg="black" color="white">
+                Add to Bag
+              </Button>
+              <br />
+              <hr />
             </Box>
           );
         })}

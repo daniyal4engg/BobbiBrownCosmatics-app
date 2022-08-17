@@ -8,20 +8,23 @@ export const PaletteSinglePage = () => {
   const params = useParams();
 
   useEffect(() => {
-    creamSingleData();
+    paletteSingleData();
   }, []);
-  const creamSingleData = async () => {
+
+  const paletteSingleData = async () => {
     try {
       const { id } = params;
-      const res = await fetch(`http://localhost:8080/palettes/${id}`);
+      const res = await fetch(
+        `https://bobbibrowncosmeticjson.herokuapp.com/palettes/${id}`
+      );
       const data = await res.json();
       setData(data);
     } catch (err) {
       console.log("error", err);
     }
   };
-  console.log("cremSingle", data);
-  console.log("creamSinglePAge", data);
+  // console.log("cremSingle", data);
+  // console.log("creamSinglePAge", data);
   return (
     <Center mt="10px">
       <Box
@@ -29,16 +32,12 @@ export const PaletteSinglePage = () => {
         textAlign="start"
         border="4px solid grey"
         padding="15px"
-        width="900px"
       >
         <Center>
           <img src={data.image_link} alt="" /> <br />
         </Center>
         <Text className="font-weight-normal" mt={2}>
           {data.name}
-        </Text>
-        <Text className="font-weight-normal " mt={2}>
-          {data.description}
         </Text>
         <Text mt={2}>${data.price}</Text>
 
