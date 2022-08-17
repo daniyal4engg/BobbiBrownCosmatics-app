@@ -37,22 +37,50 @@ export const AllRoutes = () => {
           path="/AllProductsSinglePage/:id"
           element={<AllProductsSinglePage />}
         ></Route>
-        <Route path="/cream" element={<Cream />}></Route>
+        <Route
+          path="/cream"
+          element={
+            <ProtectedRoute>
+              <Cream />
+            </ProtectedRoute>
+          }
+        ></Route>
         <Route
           path="/creamsinglepage/:id"
           element={<CreamSinglepage />}
         ></Route>
-        <Route path="/lipstick" element={<Lipstick />}></Route>
+        <Route
+          path="/lipstick"
+          element={
+            <ProtectedRoute>
+              <Lipstick />
+            </ProtectedRoute>
+          }
+        ></Route>
         <Route
           path="/LipstickSinglePage/:id"
           element={<LipstickSinglePage />}
         ></Route>
-        <Route path="/palette" element={<Palette />}></Route>
+        <Route
+          path="/palette"
+          element={
+            <ProtectedRoute>
+              <Palette />
+            </ProtectedRoute>
+          }
+        ></Route>
         <Route
           path="/paletteSinglePage/:id"
           element={<PaletteSinglePage />}
         ></Route>
-        <Route path="/pencil" element={<Pencil />}></Route>
+        <Route
+          path="/pencil"
+          element={
+            <ProtectedRoute>
+              <Pencil />
+            </ProtectedRoute>
+          }
+        ></Route>
         <Route
           path="/pencilSinglePage/:id"
           element={<PencilSinglePage />}
