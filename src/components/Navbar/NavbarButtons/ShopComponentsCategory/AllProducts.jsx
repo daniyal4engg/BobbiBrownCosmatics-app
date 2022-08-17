@@ -26,7 +26,7 @@ export const AllProducts = () => {
   }, [priceOrder, filterCategory, page]);
   const creamData = ({ priceOrder, filterCategory, page }) => {
     axios({
-      url: "https://bobbibrowncosmeticjson.herokuapp.com/allproducts/",
+      url: "https://bobbibrowncosmeticjson.herokuapp.com/consmatics",
       method: "get",
       params: {
         _page: page,
