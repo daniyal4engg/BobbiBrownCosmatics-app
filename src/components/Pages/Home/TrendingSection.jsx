@@ -24,7 +24,7 @@ export const TrendingSection = () => {
     })
       .then((r) => setData(r.data))
       .catch((e) => console.log(e.data));
-    console.log("TrendData", data);
+    // console.log("TrendData", data);
   };
   return (
     <Box m={1} w="100%">

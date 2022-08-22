@@ -29,10 +29,13 @@
     "react-use-cart": "^1.13.0",
     "redux": "^4.2.0",
     "redux-thunks": "^1.0.0",
+    "rn-search-filter": "^1.0.1",
+    "search-bar-react": "^1.1.0",
     "server": "^1.0.37",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "open": "react-scripts start",
     "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
