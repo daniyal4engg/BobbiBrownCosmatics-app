@@ -13,12 +13,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
+import swal from "sweetalert";
 export const AllProducts = () => {
   const [data, setData] = useState([]);
   const [priceOrder, setPriceOrder] = useState("");
   const [filterCategory, setFilterCategory] = useState("");
   const [page, setPage] = useState(1);
-  // const [filterItem, setFilterItem] = useState("");
+
   // cart
   const { addItem } = useCart();
   useEffect(() => {
@@ -51,6 +52,15 @@ export const AllProducts = () => {
   };
   // console.log("dilterrrr", filterCategory);
 
+  //  sweet Alert
+  // const handleAlert = () => {
+  //   swal({
+  //     title: "Product Added!",
+  //     // text: "You clicked the button!",
+  //     icon: "success",
+  //     button: "Ok",
+  //   })
+  // };
   return (
     <Box>
       <Wrap>
@@ -141,7 +151,15 @@ export const AllProducts = () => {
                   </Button>
                 </Link>
                 <Button
-                  onClick={() => addItem(e)}
+                  onClick={() => {
+                    addItem(e);
+                    swal({
+                      title: "Product Added!",
+                      // text: "You clicked the button!",
+                      icon: "success",
+                      button: "Ok",
+                    });
+                  }}
                   mb={2}
                   mt={2}
                   bg="black"

@@ -1,165 +1,3 @@
-// import { Box, Center, Text } from "@chakra-ui/react";
-// import { NavLink, useNavigate } from "react-router-dom";
-// import axios from "axios";
-// import { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { isLogin } from "../../Redux/Auth/action";
-
-// import {
-//   FormControl,
-//   FormLabel,
-//   Input,
-//   Heading,
-//   Button,
-//   Flex,
-// } from "@chakra-ui/react";
-
-// export const SignIn = () => {
-//   const [user, setUser] = useState({
-//     email: "",
-//     password: "",
-//   });
-//   const Navigate = useNavigate();
-//   const dispatch = useDispatch();
-
-//   const onChangeInput = (e) => {
-//     const { id, value } = e.target;
-//     setUser({ ...user, [id]: value });
-//   };
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     axios
-//       .post("https://ssense-api.herokuapp.com/login", user)
-//       .then((res) => {
-//         localStorage.setItem("loginUser", JSON.stringify(res.data));
-//         console.log(res.data);
-//         dispatch(isLogin(res.data));
-//         setTimeout(() => {
-//           Navigate("/");
-//         }, 2000);
-//         setUser({
-//           email: "",
-//           password: "",
-//         });
-//         alert("Login Successful ! ! !");
-//       })
-//       .catch((e) => {
-//         alert("Login Failed");
-//         Navigate("/signup");
-//       });
-//   };
-
-//   return (
-//     <Box>
-//       <Box w="100%">
-//         <Box w={"100%"} h="100%" display="flex" justifyContent={"center"}>
-//           <Box w={"60%"}>
-//             <Flex
-//               justify="center"
-//               align="center"
-//               direction="column"
-//               textAlign="center"
-//             >
-//               <Heading mt="10" as="h2" size="lg">
-//                 Login
-//               </Heading>
-//               <FormControl
-//                 w="350px"
-//                 h="360px"
-//                 margin="auto"
-//                 boxShadow="rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-//                 borderRadius="5px"
-//                 cursor="pointer"
-//                 mt={5}
-//                 padding="15px"
-//               >
-//                 {/* Email...................... */}
-//                 <FormLabel htmlFor="email" color={"grey"} mt={3}>
-//                   Email
-//                 </FormLabel>
-//                 <Input
-//                   height="40px"
-//                   width="320px"
-//                   mt={1}
-//                   focusBorderColor="grey"
-//                   id="email"
-//                   type="email"
-//                   placeholder="Enter Email"
-//                   value={user.email}
-//                   onChange={(e) => {
-//                     onChangeInput(e);
-//                   }}
-//                 />
-//                 {/* Password ................................ */}
-
-//                 <FormLabel htmlFor="Password" color={"grey"} mt={3}>
-//                   Password
-//                 </FormLabel>
-//                 <Input
-//                   height="30px"
-//                   width="320px"
-//                   type="password"
-//                   id="password"
-//                   mt={1}
-//                   focusBorderColor="grey"
-//                   placeholder="Enter Password"
-//                   value={user.password}
-//                   onChange={(e) => {
-//                     onChangeInput(e);
-//                   }}
-//                 />
-
-//                 <Button
-//                   mt="20px"
-//                   height="40px"
-//                   width="300px"
-//                   marginTop="26px"
-//                   borderColor="#ccd0d5"
-//                   color="white"
-//                   borderRadius={"50px"}
-//                   backgroundColor={"#3182ce"}
-//                   _focus={{
-//                     boxShadow:
-//                       "0 0 1px 2px rgba(88, 144, 255, .75), 0 1px 1px rgba(0, 0, 0, .15)",
-//                   }}
-//                   transform="scale(0.98)"
-//                   fontSize={"17px"}
-//                   fontWeight="bold"
-//                   _hover={{
-//                     background: "#407db5",
-//                     transform: "scale(0.98)",
-//                     color: "white",
-//                   }}
-//                   onClick={(e) => {
-//                     handleSubmit(e);
-//                   }}
-//                 >
-//                   Login
-//                 </Button>
-//                 <Center>
-//                   <Box pt="20px">
-//                     <Box>
-//                       <Text>Create new Account</Text>
-//                     </Box>
-//                     <Box pt={"10px"} pl="10px">
-//                       <NavLink
-//                         to="/signup"
-//                         style={{ textDecoration: "none", fontWeight: "bold" }}
-//                       >
-//                         Signup
-//                       </NavLink>
-//                     </Box>
-//                   </Box>
-//                 </Center>
-//               </FormControl>
-//             </Flex>
-//           </Box>
-//         </Box>
-//       </Box>
-//     </Box>
-//   );
-// };
-
 import {
   Flex,
   Box,
@@ -178,6 +16,8 @@ import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 // login check
 import { useAuth } from "../Pages/Context/Auth";
+// sweet Alert
+import swal from "sweetalert";
 export const Login = () => {
   const [user, setUser] = useState("");
   const auth = useAuth();
@@ -193,13 +33,15 @@ export const Login = () => {
         password: password,
       })
       .then((res) => {
-        alert("Access Allowed");
+        swal(`${email} Login Successfully`);
+
         navigate("/");
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((e) => {
         console.log(e.message);
-        alert("Password is Wrong");
+        // alert("Password is Wrong");
+        swal("Password is Wrong!", "Please Enter valid Credentials!", "error");
         navigate("/signup");
       });
   };
@@ -260,10 +102,9 @@ export const Login = () => {
                 Sign in
               </Button>
             </Stack>
+
             <Stack pt={6}>
-              <NavLink color={"blue.400"} to="/signup">
-                Cretae Account
-              </NavLink>
+              <NavLink color={"blue.400"} to="/signup"></NavLink>
             </Stack>
           </Stack>
         </Box>
@@ -271,3 +112,5 @@ export const Login = () => {
     </Flex>
   );
 };
+
+// toa
